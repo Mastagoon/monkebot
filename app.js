@@ -11,15 +11,11 @@ bot.launch()
 bot.on(`text`, async ctx => {
     const text = ctx.message.text
     if(commandList.includes(text)) {
-        try {
-            do {
-                const gif = await axios.get(`https://g.tenor.com/v1/search?q=monkey&key=${process.env.API_KEY}&limit=1&pos=${Math.floor(Math.random()*500)}`)
-                if(gif?.data?.results?.length)
-                ctx.telegram.sendAnimation(ctx.chat.id, gif.data.results[0].url)
-            } while(!gif?.data?.results?.length)
-        } catch(err) {
-            console.log(err)
-        }
+        do {
+            const gif = await axios.get(`https://g.tenor.com/v1/search?q=monkey&key=${process.env.API_KEY}&limit=1&pos=${Math.floor(Math.random()*500)}`)
+            if(gif?.data?.results?.length)
+            ctx.telegram.sendAnimation(ctx.chat.id, gif.data.results[0].url)
+        } while(!gif?.data?.results?.length)
     }
 })
 
