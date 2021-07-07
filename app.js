@@ -10,7 +10,7 @@ bot.launch()
 //we're gonna use the text event instead of bot.command. to support arabic commands.
 bot.on(`text`, async ctx => {
     const text = ctx.message.text
-    if(commandList.includes(text)) {
+    if(commandList.split(" ").includes(text)) {
         getGif()
     }
 })
