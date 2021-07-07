@@ -18,7 +18,7 @@ bot.on(`text`, async ctx => {
 const getGif = async(ctx) => {
     const gif = await axios.get(`https://g.tenor.com/v1/search?q=monkey&key=${process.env.API_KEY}&limit=1&pos=${Math.floor(Math.random()*500)}`)
     if(gif?.data?.results?.length) return ctx.telegram.sendAnimation(ctx.chat.id, gif.data.results[0].url)
-    return getGif()
+    return getGif(ctx)
 }
 
 // Enable graceful stop
