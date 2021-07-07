@@ -9,7 +9,7 @@ bot.launch()
 
 //we're gonna use the text event instead of bot.command. to support arabic commands.
 bot.on(`text`, async ctx => {
-    const text = ctx.message.text
+    const text = ctx.message.text.toLowerCase()
     if(commandList.includes(text)) {
         getGif(ctx)
     }
