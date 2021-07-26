@@ -2,12 +2,12 @@ const { Telegraf } = require('telegraf')
 const axios = require("axios")
 require("dotenv").config()
 
-const commandList = ["monkey", "monke", "monkes", "monkeys"]
+const commandList = ["monkey", "monke", "monkes", "monkeys","قرد"]
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.launch()
 
-//we're gonna use the text event instead of bot.command. to support arabic commands.
+// we're gonna use the text event instead of bot.command. to support arabic commands.
 bot.on(`text`, async ctx => {
     const text = ctx.message.text.toLowerCase()
     if(commandList.includes(text)) {
