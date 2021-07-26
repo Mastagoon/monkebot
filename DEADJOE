@@ -1,0 +1,40 @@
+
+*** These modified files were found in JOE when it aborted on Mon Jul 26 19:06:23 2021
+*** JOE was aborted by UNIX signal 1
+
+*** File '/home/debian/bots/monkebot/.git/MERGE_MSG'
+gMerge
+
+
+
+
+
+
+
+
+ branch 'master' of https://github.com/Mastagoon/monkebot
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+
+*** File '(Unnamed)'
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/rathena/.git/MERGE_MSG
+/home/debian/kinatest/rathena/.git/MERGE_MSG
+/home/debian/bots/untrusted-discord/.git/MERGE_MSG
+/home/debian/bots/monkebot/.git/MERGE_MSG
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
